@@ -15,7 +15,7 @@ function playGame(playerMove) {
 
   let result = "";
 
-  if (playerMove === "Scissors") {
+  if (playerMove === "scissors") {
     if (computerMove === "rock") {
       result = "You Lose.";
     } else if (computerMove === "paper") {
@@ -55,7 +55,6 @@ function playGame(playerMove) {
 
   document.querySelector(".js-result").innerHTML = result;
 
-  console.log(playerMove);
   document.querySelector(".js-moves").innerHTML = `You 
 <img src="./images/${playerMove}-emoji.png" class="move-icon">
 <img src="./images/${computerMove}-emoji.png" class="move-icon">
